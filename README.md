@@ -1,40 +1,40 @@
-# Creator Studio — نسخهٔ اولیه
+# Creator Studio — Initial Version
 
-سامانهٔ فارسی مدیریت ایده‌ها و محتواها با PHP ساده، MySQL، HTML، CSS و JavaScript. بدون Laravel و بدون API هوش مصنوعی.
+A Persian idea and content management system built using plain PHP, MySQL, HTML, CSS, and JavaScript. No Laravel, no AI APIs.
 
-## امکانات فعلی
-- داشبورد آماری
-- ثبت و حذف ایده‌ها
-- ثبت محتوا برای چند پلتفرم
-- تعیین نوع محتوا و وضعیت تولید
-- تغییر وضعیت محتوا
-- رابط واکنش‌گرا و فارسی RTL
-- استفاده از PDO و prepared statements
-- محافظت CSRF در فرم‌های تغییردهنده داده
+## Current Features
+- Statistical dashboard
+- Add and delete ideas
+- Log content for multiple platforms
+- Specify content type and production status
+- Update content status
+- Responsive, RTL (Right-to-Left) Persian interface
+- Uses PDO and prepared statements
+- CSRF protection for data-modifying forms
 
-## نصب در XAMPP
-1. پوشهٔ `creator-studio` را در `C:\xampp\htdocs\` قرار بده.
-2. Apache و MySQL را از کنترل پنل XAMPP روشن کن.
-3. وارد `http://localhost/phpmyadmin/` شو.
-4. فایل `database/schema.sql` را Import کن (این فایل دیتابیس را نیز ایجاد می‌کند).
-5. اگر مشخصات MySQL تو متفاوت است، `app/config.php` را ویرایش کن. تنظیم پیش‌فرض برای XAMPP معمولی `root` بدون رمز است.
-6. برو به `http://localhost/creator-studio/`.
+## Installation on XAMPP
+1. Place the `creator-studio` folder in `C:\xampp\htdocs\`.
+2. Start Apache and MySQL from the XAMPP Control Panel.
+3. Go to `http://localhost/phpmyadmin/`.
+4. Import the `database/schema.sql` file (this file also creates the database).
+5. If your MySQL credentials differ, edit `app/config.php`. The default setting for a standard XAMPP installation is `root` with no password.
+6. Go to `http://localhost/creator-studio/`.
 
-## پیش‌نیازها
-- PHP 8.0 یا جدیدتر پیشنهاد می‌شود.
-- افزونهٔ PDO MySQL فعال باشد.
-- MySQL/MariaDB در حال اجرا باشد.
+## Prerequisites
+- PHP 8.0 or newer recommended.
+- PDO MySQL extension enabled.
+- MySQL/MariaDB running.
 
-## ساختار
-- `index.php`: صفحه‌ها و عملیات نسخهٔ اول
-- `app/config.php`: تنظیمات اتصال
-- `app/bootstrap.php`: اتصال پایگاه داده
-- `database/schema.sql`: ساخت جداول
-- `assets/css/style.css`: طراحی و واکنش‌گرایی
-- `assets/js/app.js`: تعاملات کوچک رابط
+## Structure
+- `index.php`: Pages and operations for the initial version
+- `app/config.php`: Connection settings
+- `app/bootstrap.php`: Database connection
+- `database/schema.sql`: Table schema
+- `assets/css/style.css`: Styling and responsiveness
+- `assets/js/app.js`: Basic interface interactions
 
-## محدودیت‌های نسخهٔ اول
-این نسخه برای توسعه و تست محلی است؛ ورود کاربران، تقویم پیشرفته، آپلود رسانه، آمار تحلیلی، پشتیبان‌گیری خودکار و انتشار مستقیم شبکه‌های اجتماعی هنوز پیاده‌سازی نشده‌اند. پیش از استقرار عمومی، احراز هویت، محدودیت نرخ درخواست، سیاست حذف و نگهداری داده، مدیریت خطا و تنظیمات امنیتی سرور باید تکمیل شوند.
+## Limitations of the Initial Version
+This version is intended for local development and testing; User login, advanced calendar, media upload, analytics, automated backups, and direct social media publishing have not yet been implemented. Prior to public deployment, authentication, request rate limiting, data retention and deletion policies, error handling, and server security configurations must be finalized.
 
-## مجوز
-MIT — قابل تغییر و توسعه.
+## License
+MIT — Open to modification and development.
