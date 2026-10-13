@@ -1,0 +1,1 @@
+document.querySelectorAll('.add[data-date]').forEach(link=>link.addEventListener('click',()=>{const input=document.querySelector('input[name="date"]');if(input)input.value=link.dataset.date;}));
